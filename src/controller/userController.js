@@ -63,7 +63,7 @@ module.exports = {
                 userId: user._id
             },
                 "group50",
-                { expiresIn: "1d" })
+                { expiresIn: "1m" })
             return res.status(200).send({
                 status: true, message: "User login successfull!", data: { userID: user._id, token: generatedToken }
             })
